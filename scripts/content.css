@@ -1,0 +1,103 @@
+.savedimgicon{
+    height: 20px;
+    margin: 0px 5px;
+}
+
+
+#invoicebtn {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    z-index: 1000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #0a66c2;
+    background-color: white;
+
+    /* animation: stretch;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running; */
+
+    /* Remove default margin and padding */
+    margin: 0;
+    padding: 0;
+}
+.animate {
+    animation: stretch 1s linear infinite alternate running;
+}
+
+#invoicebtn > div {
+    height: 100%; /* Ensure the div fills the entire height of the button */
+    width: 100%; /* Ensure the div fills the entire width of the button */
+    display: flex; /* Use flexbox to center the content vertically and horizontally */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+#invoicebtn > div > img {
+    max-width: 100%; /* Ensure the image fills the entire width of the div */
+    max-height: 100%; /* Ensure the image fills the entire height of the div */
+}
+
+
+
+
+#invoicebtn:hover{
+    transform: scale(1.1);
+    background-color: whitesmoke;
+    border-color: red;
+    cursor:pointer;
+}
+
+@keyframes stretch {
+    0% {
+        background-color: white;
+    }
+    /* 90% {
+        background-color: white;
+    } */
+    100% {
+        background-color: white;
+        transform: scale(1.5);
+    }
+}
+
+
+
+#gptbtn {
+    position: fixed;
+    bottom: 70px; /* Adjust as needed */
+    right: 0;
+    /* transform: rotate(90deg); Rotate the button */
+    z-index: 9999; /* Ensure it's on top of other content */
+    background-color: #2c82d8;
+    color: ghostwhite;
+    padding: 3px 1px 1px 1px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    /* font-weight: 0; */
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+ }
+
+/* Styling for the output window */
+#outputWindow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    z-index: 9998; /* Ensure it's below the LinkedIn button */
+    overflow-y: auto;
+}

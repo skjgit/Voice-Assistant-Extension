@@ -1,0 +1,4 @@
+A btn to save post
+a btn to view saved posts
+both the cmnd available through keyboard shortcut
+both the cmd available through voice commands
